@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        /* opacity: 0.5; */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        /* background-color: brown; */
+      }
+
+      body {
+        background-color: #333;
+      }
+
+      header::before {
+        content: "";
+        opacity: 0.5;
+        background: url("images/dave-lastovskiy-RygIdTavhkQ-unsplash.jpg")
+          no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fff;
+      }
+      p {
+        font-size: 1.6rem;
+        color: #fff;
+        /* font-weight: 100; */
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello,World by Norbert</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fuga
+        pariatur autem tempore placeat, ad numquam molestias soluta ducimus
+      </p>
+    </header>
+  </body>
+</html>

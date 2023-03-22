@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .navigation {
+        padding: 2.5rem;
+        margin: 3.5rem;
+        font-size: 2rem;
+        background-color: bisque;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .nav-wrapper {
+        /* background-color: brown; */
+        padding: 1.5rem;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .navigation__heading {
+        font-weight: 400;
+        background-color: rgba(33, 33, 185, 0.589);
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0.1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.671);
+        transition: all 0.5s ease-in-out;
+      }
+
+      .navigation__heading:hover {
+        font-size: 3.2rem;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigation">
+      <h1 class="navigation__heading">LOGO</h1>
+      <div class="nav-wrapper">
+        <a href="" class="navigation__link">Profile</a>
+        <a href="" class="navigation__link">Notification</a>
+        <a href="" class="navigation__link">Payments</a>
+        <a href="" class="navigation__link">Contact</a>
+      </div>
+    </nav>
+  </body>
+</html>

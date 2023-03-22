@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Document</title>
+
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        font-size: 62.5%;
+      }
+
+      body {
+        line-height: 1.7;
+        font-weight: 400;
+        color: #555;
+      }
+
+      h1 {
+        font-size: calc(2rem + 3vw);
+        line-height: 1.2;
+      }
+
+      .test {
+        margin: 0 auto;
+        background-color: brown;
+        background-image: linear-gradient(to right, #1ef562, #8becbb);
+        max-width: 1000px;
+        padding: calc(2rem + 12vh) calc(2rem + 12vw);
+        font-size: calc(2rem + 3vw);
+        position: relative;
+        text-align: center;
+        background-clip: text;
+        color: #141a16;
+        box-shadow: 0px 1px 5px #141a1618;
+      }
+
+      .test::after {
+        content: "";
+        position: absolute;
+        box-shadow: 1px 1px 5px #141a1618;
+        top: 1.5rem;
+        left: 2.5%;
+        bottom: 0;
+        height: 100%;
+        width: 95%;
+        z-index: -1;
+        background-image: linear-gradient(to right, #345645, #1ef562);
+        /* background-color: limegreen; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, optio.
+    </h1>
+    <li></li>
+    <span>
+      <i class="ph-armchair"></i>
+    </span>
+
+    <div class="test">TEST</div>
+  </body>
+</html>

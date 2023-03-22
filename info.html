@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Info Card</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 10px;
+    }
+
+    .profile-cards {
+      /* margin: 5rem; */
+      display: flex;
+      background-color: cornflowerblue;
+      justify-content: space-evenly;
+      height: 50vh;
+      transform: translateY(50%);
+    }
+
+    .profile-cards__card {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+    .profile-cards__card--img {
+      width: 20rem;
+      height: 20rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .profile-cards__card--info-heading {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .profile-cards__card--info-text {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+  </style>
+  <body>
+    <main class="profile-cards">
+      <section class="profile-cards__card">
+        <img
+          src="images/8.1.jpg"
+          alt="Profile Image"
+          class="profile-cards__card--img"
+        />
+        <div class="profile-cards__card--info">
+          <p class="profile-cards__card--info-heading">Jim Beglin</p>
+          <p class="profile-cards__card--info-text">CEO of Erhnay Consult</p>
+        </div>
+      </section>
+
+      <section class="profile-cards__card">
+        <img
+          src="images/8.2.jpg"
+          alt="Profile Image"
+          class="profile-cards__card--img"
+        />
+        <div class="profile-cards__card--info">
+          <p class="profile-cards__card--info-heading">Lionel Andreas Messi</p>
+          <p class="profile-cards__card--info-text">CEO of Erhnay Consult</p>
+        </div>
+      </section>
+
+      <section class="profile-cards__card">
+        <img
+          src="images/8.3.jpg"
+          alt="Profile Image"
+          class="profile-cards__card--img"
+        />
+        <div class="profile-cards__card--info">
+          <p class="profile-cards__card--info-heading">Anthony Elanga</p>
+          <p class="profile-cards__card--info-text">CEO of Erhnay Consult</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

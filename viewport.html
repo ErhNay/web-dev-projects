@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport (vh & vw)</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      header {
+        background: #333 url("AppBreweryWallpaper 9.jpg") no-repeat center
+          center/cover;
+        color: white;
+        height: 100vh;
+      }
+
+      .btn {
+        background-color: aliceblue;
+        padding: 1.5rem;
+        text-decoration: none;
+        position: absolute;
+        left: 40%;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 500;
+        border-radius: 25px;
+        box-shadow: 0.5rem 0.5rem 0.5rem black;
+        top: 50%;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .btn::first-letter {
+        font-family: cursive;
+        font-size: 2rem;
+      }
+
+      .btn::after {
+        content: "Top";
+        background-color: yellow;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        display: inline-block;
+        padding: 5px 10px 5px 5px;
+        margin: 5px;
+        border-top-right-radius: 20px;
+        position: absolute;
+        top: -4.5px;
+        left: 150px;
+        transition: all 0.5s ease-out;
+      }
+
+      /* .btn:hover::after {
+        background-color: tomato;
+        transform: translateY(-5px);
+      } */
+
+      .btn:hover {
+        transform: translate(0px, 10px);
+      }
+
+      section {
+        padding: 8rem;
+        line-height: 1.8rem;
+      }
+
+      section::first-letter {
+        font-size: 5rem;
+      }
+
+      .sec {
+        /* background-color: #333; */
+        padding-inline-start: 8rem;
+      }
+
+      .box {
+        height: 45rem;
+        width: 100%;
+        background-color: chartreuse;
+        border-top: 5px solid #333;
+        border-bottom: 5px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis atque
+        repellendus architecto repudiandae animi provident aliquid excepturi,
+        tempore quisquam. Non repellendus repudiandae autem recusandae quae
+        corrupti aut minus cumque deserunt.
+      </p>
+      <a href="flexbox.html" class="btn">Find out more</a>
+    </header>
+    <section>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam obcaecati
+      ipsam nesciunt distinctio delectus ullam totam, velit iure sint ad libero
+      quia neque! Doloremque recusandae adipisci sequi ipsa perspiciatis itaque
+      ducimus sint vero libero quia, sed ad dicta aliquam ea dolor et pariatur,
+      nisi sunt cumque. Consectetur ab laboriosam natus unde aperiam dolore
+      accusamus, odit animi asperiores quas odio hic corrupti possimus! Fugiat
+      voluptate perferendis recusandae ratione unde eum sequi sunt, placeat
+      totam, delectus aut! Voluptatem exercitationem dolorum iusto eveniet
+      magnam corporis quibusdam repellendus eum deleniti eaque consectetur eius,
+      quod commodi quia omnis totam hic dicta nostrum minus? Repellendus, natus!
+      Quam nisi sit, cumque modi quia explicabo fuga perferendis illo
+      repudiandae illum, commodi aut et dolorem necessitatibus maiores quis
+      suscipit quasi ut vel voluptas architecto? Dolores magnam cupiditate culpa
+      molestias harum obcaecati impedit vero amet perspiciatis corporis aliquid
+      explicabo fuga blanditiis quia, facere, ipsa architecto voluptatibus.
+    </section>
+
+    <section class="sec">
+      <div class="box"></div>
+    </section>
+  </body>
+</html>

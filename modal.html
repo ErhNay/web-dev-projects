@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal - My Own</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.5;
+      }
+
+      section {
+        width: 30rem;
+        background-color: #f89442;
+        margin: 10rem auto;
+        padding: 2rem 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.445);
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      h2 {
+        font-size: 2rem;
+        color: #444;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 2rem;
+        color: #444;
+        font-size: 1.2rem;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 1rem;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        flex-basis: 50%;
+      }
+
+      a:first-child {
+        color: #f89442;
+        background-color: #fff;
+      }
+      a:last-child {
+        color: white;
+        background-color: #cf7327;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Attempt Successful</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+        perferendis, inventore fuga reiciendis, dicta optio provident
+        exercitationem labore atque voluptatibus maxime tempora eligendi sint
+        eveniet aliquid. Dignissimos blanditiis explicabo necessitatibus.
+      </p>
+      <div>
+        <a href="#">Cancel</a>
+        <a href="#">View Details</a>
+      </div>
+    </section>
+  </body>
+</html>

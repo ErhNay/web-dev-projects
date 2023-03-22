@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Posts Side by Side</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-size: 10px;
+      }
+      /* :root {
+        font-size: 10px;
+      } */
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .blog-posts {
+        width: 120rem;
+        display: flex;
+        margin: 0 auto;
+      }
+
+      .blog-posts__post {
+        margin: 2rem;
+        /* flex: 1; */
+      }
+
+      .blog-posts__post--img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+
+      .blog-posts__post--date {
+        background-color: #de349dda;
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin: 2rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 0.5rem;
+      }
+
+      .blog-posts__post--title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .blog-posts__post--description {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: rgba(0, 0, 0, 0.637);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="blog-posts">
+      <article class="blog-posts__post">
+        <img
+          class="blog-posts__post--img"
+          loading="lazy"
+          src="images/4.1.jpg"
+          alt="Presentation"
+        />
+
+        <p class="blog-posts__post--date">Dec 22, 2030</p>
+
+        <h2 class="blog-posts__post--title">
+          Meet AutoManage, the best AI management tools
+        </h2>
+
+        <p class="blog-posts__post--description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+          deserunt ratione consequatur error temporibus quo magni quidem placeat
+          optio, dolor, culpa laborum libero delectus. Dicta voluptate corporis
+          accusamus provident in. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Atque corrupti animi id laborum voluptate nemo
+          doloribus. Enim, eveniet odio iusto inventore atque, sapiente
+          doloremque maiores reprehenderit quasi nemo quis tempora?
+        </p>
+      </article>
+
+      <article class="blog-posts__post">
+        <img
+          class="blog-posts__post--img"
+          loading="lazy"
+          src="images/4.2.jpg"
+          alt="Presentation"
+        />
+
+        <p class="blog-posts__post--date">Spet 22, 2030</p>
+
+        <h2 class="blog-posts__post--title">
+          How to earn more money as a wellness coach
+        </h2>
+
+        <p class="blog-posts__post--description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+          deserunt ratione consequatur error temporibus quo magni quidem placeat
+          optio, dolor, culpa laborum libero delectus. Dicta voluptate corporis
+          accusamus provident in. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Atque corrupti animi id laborum voluptate nemo
+          doloribus. Enim, eveniet odio iusto inventore atque, sapiente
+          doloremque maiores reprehenderit quasi nemo quis tempora?
+        </p>
+      </article>
+
+      <article class="blog-posts__post">
+        <img
+          class="blog-posts__post--img"
+          loading="lazy"
+          src="images/4.3.jpg"
+          alt="Presentation"
+        />
+
+        <p class="blog-posts__post--date">Aug 22, 2030</p>
+
+        <h2 class="blog-posts__post--title">
+          The no-fuss guide to upselling and cross selling
+        </h2>
+
+        <p class="blog-posts__post--description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+          deserunt ratione consequatur error temporibus quo magni quidem placeat
+          optio, dolor, culpa laborum libero delectus. Dicta voluptate corporis
+          accusamus provident in. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Atque corrupti animi id laborum voluptate nemo
+          doloribus. Enim, eveniet odio iusto inventore atque, sapiente
+          doloremque maiores reprehenderit quasi nemo quis tempora?
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

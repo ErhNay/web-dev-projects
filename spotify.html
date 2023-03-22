@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Logo</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 10px;
+        font-family: Crimson Text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: black;
+        height: 25rem;
+        width: 25rem;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container-logo {
+        height: 20rem;
+        width: 20rem;
+        position: relative;
+        border-radius: 50%;
+        background-color: #1db954;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(8deg);
+      }
+
+      .container-logo::before,
+      .container-logo::after {
+        content: '';
+        position: absolute;
+        height: 100px;
+        margin: 0 auto;
+        border: solid 10px #000;
+        border-color: #000 transparent transparent transparent;
+        border-radius: 150%/100px 100px 0 0;
+      }
+
+      .container-logo::before {
+        width: 75%;
+        top: 111px;
+      }
+
+      .container-logo::after {
+        width: 45%;
+        bottom: 18px;
+      }
+
+      .container-logo__sym {
+        width: 65%;
+        height: 100px;
+        border: solid 10px #000;
+        border-color: #000 transparent transparent transparent;
+        border-radius: 150%/100px 100px 0 0;
+        margin-top: 75px;
+      }
+
+      .spotify-text {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px #1db954;
+        transition: animation 2s ease;
+      }
+      .spotify-text:hover {
+        /* transform: scale(1.05); */
+        animation: bounce 2s ease-in 0.5s infinite;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-logo">
+        <div class="container-logo__sym"></div>
+      </div>
+    </div>
+    <div class="spotify-text">Spotify</div>
+  </body>
+</html>

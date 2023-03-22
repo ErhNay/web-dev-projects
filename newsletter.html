@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+
+    <style>
+      form {
+        display: flex;
+        /* border: 2px solid rgb(43, 43, 43); */
+        /* height: 2.5rem; */
+        width: 50%;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        background: none;
+        padding: 1rem 2rem;
+      }
+
+      input[type="text"] {
+        border: 2px solid #000;
+        font-size: 1.2rem;
+        color: rgb(81, 88, 88);
+        flex-grow: 1;
+      }
+
+      /* input[type="text"]:focus {
+        color: blue;
+      } */
+
+      input[type="submit"] {
+        border: 2px solid #000;
+        border-left: none;
+        background-color: coral;
+        font-size: 1.2rem;
+        color: #fff;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" placeholder="Email" />
+      <input type="submit" value="Subscribe" />
+    </form>
+  </body>
+</html>

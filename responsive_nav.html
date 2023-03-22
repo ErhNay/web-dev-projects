@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive-Navigation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 10px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        line-height: 1.5;
+      }
+
+      header {
+        background-color: lightpink;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+      }
+
+      h3 {
+        color: #000000;
+        font-size: 2.5rem;
+      }
+
+      nav {
+        flex-basis: 30%;
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.5rem;
+        font-weight: 400;
+        background-color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        flex: 1 1 0%;
+      }
+
+      input {
+        padding: 1rem 2rem;
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        background: none;
+        background-color: rgb(255, 142, 159);
+        color: #00000077;
+      }
+
+      input::placeholder {
+        color: #00000077;
+      }
+
+      @media screen and (max-width: 800px) {
+        header {
+          flex-wrap: wrap;
+        }
+
+        nav {
+          order: 1;
+          /* flex-grow: 1; */
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>El</h3>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Services</a>
+      </nav>
+      <form action="">
+        <input type="text" placeholder="Search here..." />
+      </form>
+    </header>
+  </body>
+</html>
